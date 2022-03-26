@@ -1,13 +1,251 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("https://data.1freewallpapers.com/detail/notepad-glasses-yellow.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.textfont {
+  font-family: "Knewave", cursive;
+  font-size: 48px;
+  text-shadow: 4px 4px 4px rgb(0, 0, 0);
+  color: rgb(251, 255, 0);
+}
+
+.navTextFont {
+  font-family: "Knewave", cursive;
+  font-size: 35px;
+  text-shadow: 4px 4px 4px rgb(0, 0, 0);
+  color: rgb(251, 255, 0);
+  margin-left: 7px;
+  margin-bottom: 2px;
+  text-decoration: none;
+}
+
+.box {
+  width: 800px;
+  padding: 100px;
+  border: 10px solid rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.822);
+  border-style: outset;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -400px;
+  margin-top: 100px;
+  border-radius: 20px;
+}
+
+.textFont1 {
+  text-decoration: line-through;
+}
+
+.textFont2 {
+  text-decoration: none;
+}
+
+.iconStyle {
+  margin-top: -5px;
+  width: 17px;
+  height: 17px;
+}
+
+.listStyle {
+  border: 2px solid rgb(151, 151, 2);
+  margin: auto;
+  padding: 12px;
+  width: 100%;
+}
+
+.selected {
+  background-color: rgb(230, 213, 115);
+}
+
+.addBtn {
+  margin-right: 3px;
+}
+
+.resetBtn {
+  margin-left: 30px;
+}
+
+.backBtn {
+  margin-right: 1px;
+}
+
+.delBtn {
+  margin-left: 1px;
+}
+
+.saveBtn {
+  margin-left: 6px;
+}
+
+.nbLinkedlnLogo {
+  width: 40px;
+  height: 40px;
+  margin-top: 8px;
+  position: absolute;
+  right: 5px;
+}
+
+.nbGithubLogo {
+  width: 40px;
+  height: 40px;
+  margin-top: 8px;
+  position: absolute;
+  right: 50px;
+}
+
+.navBar {
+  background-color: #83825c;
+  background: linear-gradient(270deg, rgb(94, 79, 15), #080808);
+}
+
+.date {
+  font-family: "Alfa Slab One", cursive;
+  font-size: 25px;
+  text-shadow: 4px 4px 4px rgb(0, 0, 0);
+  color: rgb(251, 255, 0);
+}
+
+.dateBox {
+  background-color: white;
+  border-radius: 15px;
+  height: 45px;
+  width: 190px;
+  border: 3px solid rgb(238, 255, 0);
+}
+
+.linkBtn {
+  color: black;
+  text-decoration: none;
+}
+
+.linkBtnActive:hover {
+  color: black !important;
+  text-decoration: none !important;
+}
+
+.navLinkBtnActive:hover {
+  font-family: "Knewave", cursive !important;
+  font-size: 35px !important;
+  text-shadow: 4px 4px 4px rgb(0, 0, 0) !important;
+  color: rgb(251, 255, 0) !important;
+  margin-left: 7px !important;
+  margin-bottom: 2px !important;
+  text-decoration: none !important;
+}
+
+.average {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.startBtn {
+  display: flexbox;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  background-color: #222;
+  padding: 17px 60px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.startBtn span {
+  position: relative;
+  z-index: 1;
+}
+
+.startBtn:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 490%;
+  width: 140%;
+  background: #d6d30b;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+
+.startBtn:hover:after {
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+.homePage {
+  background-image: url("https://images.unsplash.com/photo-1558346648-9757f2fa4474?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  height: calc(100vh - 70.5px);
+  border: 20px solid transparent;
+  border-image: linear-gradient(to right, yellow, black, yellow, black) 60;
+}
+
+.homeFont {
+  font-family: "Galada", cursive;
+  font-size: 47px;
+  text-shadow: 10px 10px 10px rgb(0, 0, 0);
+  color: rgb(251, 255, 0);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+
+.createdFont {
+  font-family: "Playball", cursive;
+  font-size: 50px;
+  text-shadow: 10px 10px 10px rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  margin-top: 70px;
+  margin-left: 15px;
+}
+
+.homeLinkedlnLogo {
+  width: 60px;
+  height: 60px;
+  display: block;
+  margin-left: 200px;
+}
+
+.homeGithubLogo {
+  width: 60px;
+  height: 60px;
+  display: block;
+}
+
+.homeDiv {
+  float: left;
+  margin-left: 15px;
+  margin-top: 15px;
 }
